@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "solana-token-analyzer"
+version = "0.1.0"
+description = "Analyze a single Solana token from its ticker or mint address"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+dependencies = []
+
+[project.scripts]
+solana-token-analyzer = "solana_token_analyzer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
